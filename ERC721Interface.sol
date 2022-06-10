@@ -46,3 +46,11 @@ interface IERC721Metadata {
 
     function tokenUri(uint _tokenId) external view returns(string memory _tokenurl); 
 }
+
+interface IERC721Enumerable {
+    function totalSupply() external view returns(uint);
+
+    function tokenByIndex(uint _index) external view returns(uint);
+
+    function tokenOfOwnerByIndex() external view returns(uint);
+}
